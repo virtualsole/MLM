@@ -1,0 +1,54 @@
+/* Levels */
+
+.level_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1rem;
+    background-color: var(--head-bg);
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: var(--primary-color);
+    width: 80%;
+    transition: .3s ease-in-out;
+}
+
+.level_arrow:hover {
+    position: relative;
+    left: 2px;
+}
+
+.levels table {
+    border-bottom: 2px solid wheat;
+    color: var(--primary-color);
+    text-align: center;
+    line-height: 1rem;
+}
+
+.sha_grp {
+    font-size: 1.5rem;
+    color: var(--head-btn);
+}
+
+.sha_heart {
+    font-size: 1.1rem;
+    color: var(--head-btn);
+}
+
+@media screen and (max-width: 768px) {
+    .level_flex {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .level_flex {
+        width: 100%;  
+        padding: 5px 15px;  
+    }
+
+    body {
+        font-size: calc(13em + 10vw);
+    }
+}

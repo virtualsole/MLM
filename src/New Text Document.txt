@@ -1,0 +1,638 @@
+ //Stats Component Code
+
+
+                   <div className="self_stats_btns">
+
+                    <div className="self_stats_stack1 stats_btns_flex">
+                        <div>
+                            <Button>
+                                <p className='stats_btn_p'>0</p>
+                                <p>Total Members</p>
+                            </Button>
+                        </div>
+                        <div>
+                            <Button>
+                                <p className='stats_btn_p'>0</p>
+                                <p>Direct Members</p>
+                            </Button>
+                        </div>
+                    </div>
+
+                    <div className="self_stats_stack2 stats_btns_flex">
+                        <div>
+                            <Button>
+                                <p className='stats_btn_p'>BLV</p>
+                                <p>Staking</p>
+                            </Button>
+                        </div>
+                        <div>
+                            <Button>
+                                <p className='stats_btn_p'>BLV</p>
+                                <p>Receivable Rewards</p>
+                            </Button>
+                        </div>
+                    </div>
+
+                    <div className="self_stats_stack3 stats_btns_flex">
+                        <div>
+                            <Button>
+                                <p className='stats_btn_p'>BLV</p>
+                                <p>Direct Rewards</p>
+                            </Button>
+                        </div>
+                        <div>
+                            <Button>
+                                <p className='stats_btn_p'>BLV</p>
+                                <p>Team Rewards</p>
+                            </Button>
+                        </div>
+                    </div>
+
+                    <div className="self_stats_stack4 stats_btns_flex">
+                        <div>
+                            <Button>
+                                <p className='stats_btn_p'>BLV</p>
+                                <p>Staking Rewards</p>
+                            </Button>
+                        </div>
+                        <div>
+                            <Button>
+                                <p className='stats_btn_p'>BLV</p>
+                                <p>Total Rewards</p>
+                            </Button>
+                        </div>
+                    </div>
+
+                    <div className="self_stats_stack5 stats_btns_flex">
+                        <div>
+                            <Button>
+                                <p className='stats_btn_p'>BLV</p>
+                                <p>Withdrawls</p>
+                            </Button>
+                        </div>
+                        <div>
+                            <Button>
+                                <p className='stats_btn_p'>BLV</p>
+                                <p>Available Rewards</p>
+                            </Button>
+                        </div>
+                    </div>
+
+                  </div>
+                
+                 <div className="stats_below_btns">
+                  <div className='mt-3 mb-3'>
+                    <Button className='stats_below_btn1 w-100 mb-3'>Withdraw Rewards</Button>
+                  
+                    <Button className='stats_below_btn2 w-100'>Statement Details</Button>
+                  </div>
+                  </div>
+
+
+
+                  // Stats Styles
+
+
+
+                  .self_stats_btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    color: #fff;
+}
+
+.stats_btns_flex {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.stats_btns_flex Button {
+    background-color: red !important;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    line-height: 4px;
+    font-weight: 300;
+    padding: 10px 20px;
+    width: 100%;
+    display: inline-block;
+}
+
+.stats_btn_p {
+    font-weight: 500;
+}
+
+.stats_btns_flex Button:hover {
+    border: 1px solid transparent;
+}
+
+.stats_below_btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stats_below_btn1 {
+    background-color: transparent !important;
+    border: 1px solid red !important;
+    border-radius: 5rem !important; 
+}
+
+.stats_below_btn2 {
+    background-color: red !important;
+    border: 1px solid transparent !important;
+    border-radius: 5rem !important;
+}
+
+
+
+//Levels Component
+
+
+
+<div className="level_divs">
+
+                    <div className="level_1 level_flex">
+                        <div className="level1_content">
+                            <h5>Level 1</h5>
+                            <span> <GiPawPrint className='text-danger' /> 0 </span>
+                            <span> <GiShatteredHeart /> 0 </span>
+                        </div>
+                        <div className="icon">
+                            <Button className='bg-white border-0'>
+                              <IoIosArrowDroprightCircle className='display-6 text-danger level_arrow' />
+                            </Button>
+                        </div>
+                    </div>
+
+                    <div className="level_2 level_flex">
+                        <div className="level2_content">
+                            <h5>Level 2</h5>
+                            <span> <GiPawPrint className='text-danger' /> 0 </span>
+                            <span> <GiShatteredHeart /> 0 </span>
+                        </div>
+                        <div className="icon">
+                            <Button className='bg-white border-0'>
+                              <IoIosArrowDroprightCircle className='display-6 text-danger level_arrow' />
+                            </Button>
+                        </div>
+                    </div>
+
+                    <div className="level_3 level_flex">
+                        <div className="level3_content">
+                            <h5>Level 3</h5>
+                            <span> <GiPawPrint className='text-danger' /> 0 </span>
+                            <span> <GiShatteredHeart /> 0 </span>
+                        </div>
+                        <div className="icon">
+                            <Button className='bg-white border-0'>
+                              <IoIosArrowDroprightCircle className='display-6 text-danger level_arrow' />
+                            </Button>
+                        </div>
+                    </div>
+
+                    <div className="level_4 level_flex">
+                        <div className="level4_content">
+                            <h5>Level 4</h5>
+                            <span> <GiPawPrint className='text-danger' /> 0 </span>
+                            <span> <GiShatteredHeart /> 0 </span>
+                        </div>
+                        <div className="icon">
+                            <Button className='bg-white border-0'>
+                              <IoIosArrowDroprightCircle className='display-6 text-danger level_arrow' />
+                            </Button>
+                        </div>
+                    </div>
+
+                    <div className="level_5 level_flex">
+                        <div className="level5_content">
+                            <h5>Level 5</h5>
+                            <span> <GiPawPrint className='text-danger' /> 0 </span>
+                            <span> <GiShatteredHeart /> 0 </span>
+                        </div>
+                        <div className="icon">
+                            <Button className='bg-white border-0'>
+                              <IoIosArrowDroprightCircle className='display-6 text-danger level_arrow' />
+                            </Button>
+                        </div>
+                    </div>
+
+                    <div className="level_6 level_flex">
+                        <div className="level6_content">
+                            <h5>Level 6</h5>
+                            <span> <GiPawPrint className='text-danger' /> 0 </span>
+                            <span> <GiShatteredHeart /> 0 </span>
+                        </div>
+                        <div className="icon">
+                            <Button className='bg-white border-0'>
+                              <IoIosArrowDroprightCircle className='display-6 text-danger level_arrow' />
+                            </Button>
+                        </div>
+                    </div>
+
+                    <div className="level_7 level_flex">
+                        <div className="level7_content">
+                            <h5>Level 7</h5>
+                            <span> <GiPawPrint className='text-danger' /> 0 </span>
+                            <span> <GiShatteredHeart /> 0 </span>
+                        </div>
+                        <div className="icon">
+                            <Button className='bg-white border-0'>
+                              <IoIosArrowDroprightCircle className='display-6 text-danger level_arrow' />
+                            </Button>
+                        </div>
+                    </div>
+
+                    <div className="level_8 level_flex">
+                        <div className="level8_content">
+                            <h5>Level 8</h5>
+                            <span> <GiPawPrint className='text-danger' /> 0 </span>
+                            <span> <GiShatteredHeart /> 0 </span>
+                        </div>
+                        <div className="icon">
+                            <Button className='bg-white border-0'>
+                              <IoIosArrowDroprightCircle className='display-6 text-danger level_arrow' />
+                            </Button>
+                        </div>
+                    </div>
+
+                    <div className="level_9 level_flex">
+                        <div className="level9_content">
+                            <h5>Level 9</h5>
+                            <span> <GiPawPrint className='text-danger' /> 0 </span>
+                            <span> <GiShatteredHeart /> 0 </span>
+                        </div>
+                        <div className="icon">
+                            <Button className='bg-white border-0'>
+                              <IoIosArrowDroprightCircle className='display-6 text-danger level_arrow' />
+                            </Button>
+                        </div>
+                    </div>
+
+                    <div className="level_9 level_flex">
+                        <div className="level9_content">
+                            <h5>Level 10</h5>
+                            <span> <GiPawPrint className='text-danger' /> 0 </span>
+                            <span> <GiShatteredHeart /> 0 </span>
+                        </div>
+                        <div className="icon">
+                            <Button className='bg-white border-0'>
+                              <IoIosArrowDroprightCircle className='display-6 text-danger level_arrow' />
+                            </Button>
+                        </div>
+                    </div>
+
+                  </div>
+
+      //Statistics
+
+      //Self Statistics
+
+      <div className="stats">
+                    <div className="stats_btns">
+                      <Button className='stats_btn'>
+                        <p className='stats_btn_p'>0</p>
+                        <p>Total Members</p>
+                      </Button>
+                      <Button className='stats_btn'>
+                        <p className='stats_btn_p'>0</p>
+                        <p>Direct Members</p>
+                      </Button>
+                    </div>
+
+                    <div className="stats_btns">
+                      <Button className='stats_btn'>
+                        <p className='stats_btn_p'>BLV</p>
+                        <p>Staking</p>
+                      </Button>
+                      <Button className='stats_btn'>
+                        <p className='stats_btn_p'>BLV</p>
+                        <p>Receivable Rewards</p>
+                      </Button>
+                    </div>
+
+                    <div className="stats_btns">
+                      <Button className='stats_btn'>
+                        <p className='stats_btn_p'>BLV</p>
+                        <p>Direct Rewards</p>
+                      </Button>
+                      <Button className='stats_btn'>
+                        <p className='stats_btn_p'>BLV</p>
+                        <p>Team Rewards</p>
+                      </Button>
+                    </div>
+
+                    <div className="stats_btns">
+                      <Button className='stats_btn'>
+                        <p className='stats_btn_p'>BLV</p>
+                        <p>Staking Rewards</p>
+                      </Button>
+                      <Button className='stats_btn'>
+                        <p className='stats_btn_p'>BLV</p>
+                        <p>Total Rewards</p>
+                      </Button>
+                    </div>
+
+                    <div className="stats_btns">
+                      <Button className='stats_btn'>
+                        <p className='stats_btn_p'>BLV</p>
+                        <p>Withdrawls</p>
+                      </Button>
+                      <Button className='stats_btn'>
+                        <p className='stats_btn_p'>BLV</p>
+                        <p>Available Rewards</p>
+                      </Button>
+                    </div>
+
+                  </div>
+
+
+     // Network Statistics
+
+     <Button className='network_stats_btn'>
+                        <p>0</p>
+                        <p>Total Participants</p>
+                      </Button>
+
+                      <Button className='network_stats_btn'>
+                        <p>BLV</p>
+                        <p>Total Staked in Pool</p>
+                      </Button>
+
+                      <Button className='network_stats_btn'>
+                        <p>$</p>
+                        <p>Total Staked in Pool (USD)</p>
+                      </Button>
+
+                      <Button className='network_stats_btn'>
+                        <p>BLV</p>
+                        <p>Total Rewards</p>
+                      </Button>
+
+                      <Button className='network_stats_btn'>
+                        <p>$</p>
+                        <p>Total Rewards (USD)</p>
+                      </Button>
+
+                      <Button className='network_stats_btn'>
+                        <p>BLV</p>
+                        <p>Total Withdrawls</p>
+                      </Button>
+
+                      <Button className='network_stats_btn'>
+                        <p>$</p>
+                        <p>Total Withdrawls</p>
+                      </Button>                         
+
+
+
+
+
+                      /////////////////////////////////Vstack/////////////////////////
+                      {/* <div className="container">
+        <div className="row justify-content-center border m-3">
+          <div className="col-lg-11">
+            <div className="row justify-content-between">
+              <div className="col-lg-4 border border-primary card-bg">
+                <div className="row justify-content-center">
+                  <div className="text-center post-title">
+                    total staked in Networks (usd)
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 border border-primary post2">
+                <div className="row justify-content-center">
+                  <div className="text-center post-title">
+                    total staked in Networks (usd)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row justify-content-center border m-3">
+          <div className="col-lg-10">
+            <div className="row justify-content-between">
+              <div className="col-lg-4 border border-primary card-bg">
+                <div className="row">
+                  <div className="text-center post-title">
+                    total staked in Networks (usd)
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 border border-primary post2">
+                <div className="row justify-content-center">
+                  <div className="text-center post-title">
+                    total staked in Networks (usd)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div className="row justify-content-center border m-3">
+          <div className="col-lg-9">
+            <div className="row justify-content-between">
+              <div className="col-lg-4 border border-primary card-bg">
+                <div className="row justify-content-center">
+                  <div className="text-center post-title">
+                    total staked in Networks (usd)
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 border border-primary post2">
+                <div className="row justify-content-center">
+                  <div className="text-center post-title">
+                    total staked in Networks (usd)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row justify-content-center border m-3">
+          <div className="col-lg-7">
+            <div className="row justify-content-center">
+              <div className="col-md-4 border border-primary postlast">
+                <div className="row justify-content-center">
+                  <div className="text-center post-title">
+                    total staked in Networks (usd)
+                    shadlfasjkfdhjklhjlkhkljhjklhjklhjsdakfhadkjhfkjashdfkjshakjhsdnmfkasjfkjashefukhawekjnvsdmsabnjkfbmasndnfthwekajbnecfaksjfc mn
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
+      {/* <div className="vstack"> */}
+      {/* <div className="container">
+        <div className="row justify-content-center border m-3">
+          <div className="col-md-11">
+            <div className="row justify-content-between">
+              <div className="col-lg-4 border border-primary post">
+                <div className="row justify-content-center">
+                  <div className="text-center post-title">
+                    total staked in Networks (usd)
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 border border-primary post2">
+                <div className="row justify-content-center">
+                  <div className="text-center post-title">
+                    total staked in Networks (usd)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row justify-content-center border m-3">
+          <div className="col-md-10">
+            <div className="row justify-content-between">
+              <div className="col-lg-4 border border-primary post">
+                <div className="row justify-content-center">
+                  <div className="text-center post-title">
+                    total staked in Networks (usd)
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 border border-primary post2">
+                <div className="row justify-content-center">
+                  <div className="text-center post-title">
+                    total staked in Networks (usd)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row justify-content-center border m-3">
+          <div className="col-md-9">
+            <div className="row justify-content-between">
+              <div className="col-lg-5 border border-primary post">
+                <div className="row justify-content-center">
+                  <div className="text-center post-title">
+                    total staked in Networks (usd)
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-5 border border-primary post2">
+                <div className="row justify-content-center">
+                  <div className="text-center post-title">
+                    total staked in Networks (usd)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row justify-content-center border m-3">
+          <div className="col-md-7">
+            <div className="row justify-content-center">
+              <div className="col-lg-7  border border-primary postlast">
+                <div className="row justify-content-center">
+                  <div className="text-center post-title">
+                    total staked in Networks (usd)
+                    shadlfasjkfdhjklhjlkhkljhjklhjklhjsdakfhadkjhfkjashdfkjshakjhsdnmfkasjfkjashefukhawekjnvsdmsabnjkfbmasndnfthwekajbnecfaksjfc mn
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> */}
+        {/* <Container>
+          <Row>
+            <Col>
+              <div className="first_two">
+                <div className="first">
+                  <div className="shape_content">
+                    <div>
+                      <span>{userInfo.tottalUserDeposite}</span>
+                    </div>
+                    <div>
+                      <p>Total Participants</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="second">
+                  <div className="shape_content">
+                    <div className="text-overflow">
+                      <span>{userInfo.totalDepositeInNetwork}</span>
+                    </div>
+                    <div>
+                      <p>Total Staked in Network</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="second_two">
+                <div className="third">
+                  <div className="shape_content">
+                    <div>
+                      <span>$436.84 K</span>
+                    </div>
+                    <div className="text-overflow">
+                      <p className="text-overflow">Total Staked in Network (USD)</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="four">
+                  <div className="shape_content">
+                    <div>
+                      <span>{userInfo.totalRewardsWithdrawInNetwork}</span>
+                    </div>
+                    <div>
+                      <p>Total Rewards</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="third_two">
+                <div className="five">
+                  <div className="shape_content">
+                    <div>
+                      <span>$</span>
+                    </div>
+                    <div>
+                      <p>Total Rewards (USD)</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="six">
+                  <div className="shape_content">
+                    <div>
+                      <span>{userInfo.totalLevelRewardsWithdrawInNetwork}</span>
+                    </div>
+                    <div>
+                      <p>Total Level Withdrawls</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="last_one">
+                <div className="seven">
+                  <div className="shape_content">
+                    <div>
+                      <span>$</span>
+                    </div>
+                    <div>
+                      <p>Total Level Withdrawls (USD)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container> */}
+      {/* </div> */}

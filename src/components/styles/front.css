@@ -1,0 +1,60 @@
+/* Front Page */
+
+/* .front {
+  background-color: #00070d;
+} */
+
+.front_card {
+    background-color: var(--front-bg) !important;
+    color: var(--primary-color);
+    padding-inline: 1rem;
+    width: fit-content;
+  }
+
+  .modal-content {
+    background-color: var(--modal-bg) !important;
+    /* color: var(--primary-color); */
+  }
+
+  /* .metamask {
+    background-color: var(--front-bg) !important;
+  } */
+
+  .modale_spin_head,
+  .modale_spin
+   {
+    color: var(--primary-color) !important;
+  }
+
+  .metamask input[type='radio']:checked {
+    background-color: green !important;
+    border-color: green !important;
+  }
+
+  .modal_sign {
+    background-color: var(--modal-bg) !important;
+  }
+  
+  .front_btn {
+    background-image: linear-gradient(#1d57ef,hsla(0,0%,100%,0)) !important;
+  }
+  
+  .profile_card {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .profile_card_img {
+    width: 30%;
+  }
+
+  input [type='radio'] :checked {
+    color: green !important;
+    background-color: green !important;
+  }
+
+  .radio_meta {
+    color: green !important;
+    cursor: pointer;
+  }

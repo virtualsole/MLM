@@ -1,0 +1,27 @@
+/* Stake_History */
+
+.stakehistory {
+    background-color: var(--head-bg);
+    border-radius: 34.5px;
+    padding: 1.5rem;
+}
+
+.stakehistory p{
+    text-align: center;
+}
+
+.stakehistory Table {
+    color: var(--table-clr) !important;
+}
+
+@media screen and (max-width:575px) {
+    .stake_history {
+        margin-inline: .5rem;
+    }
+
+        .stakehistory Table th{
+            line-height: 18px;
+            font-size: 13px;
+            padding-inline: .9rem !important;
+        }
+}

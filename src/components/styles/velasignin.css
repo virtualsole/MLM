@@ -1,0 +1,53 @@
+/* Profile Page */
+
+.logout {
+    background-color: #ff0000;
+    display: flex;
+    justify-content: flex-end !important;
+    border-radius: 200px;
+    width: fit-content !important;
+    padding: .2rem .2rem !important;
+    cursor: pointer;
+  }
+  
+  .icon_upload {
+    position: relative;
+    display: block;
+    background-color: white;
+    color: rgb(107, 109, 110);
+    border-radius: 200px;
+    margin: auto;
+    width: fit-content !important;
+    padding: 2rem 2rem !important;
+    cursor: pointer;
+  }
+  
+  .user_icon {
+    font-size: 2rem;
+    position: relative;
+    margin: auto !important;
+  }
+
+  .ph_mg {
+    color: var(--primary-color);
+  }
+  
+  .profile span {
+    font-weight: 700;
+  }
+
+  .right_side {
+    background-color: var(--form-back);
+    /* border: .1px solid #e5e7eb; */
+  }
+
+  .switch .change{
+    width: 2em;
+    margin-left: -2.5em;
+    background-image: var(--bg-img) !important;
+    background-position: left center;
+    border-radius: 2em;
+    transition: 0.15s ease-in-out;
+    border: none !important;
+    background-color: var(--bg-offhead) !important;
+  }

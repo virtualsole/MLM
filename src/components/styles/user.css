@@ -1,0 +1,58 @@
+/* Sign In */
+
+.form {
+    background-color: var(--head-bg);
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 34.5px;
+}
+
+.signin_btn {
+    background: var(--head-btn) !important;
+    border: transparent !important;
+    border-radius: 34.5px !important;
+    padding: 10px 25px 10px 25px !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    box-shadow: -6px -6px 10px rgba(253,251,211,.2), 6px 6px 10px rgba(0,0,0,.8);
+}
+
+@media screen and (max-width: 990px) {
+    .form {
+        padding: 1rem;
+        margin: 0;
+        margin-block: 1.5rem;
+    }   
+}
+
+
+/* Sign Up */
+
+.signup_form {
+    background-color: var(--head-bg);
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 34.5px;
+}
+
+.signup_btn {
+    background: var(--head-btn) !important;
+    border: transparent !important;
+    border-radius: 34.5px !important;
+    padding: 10px 25px 10px 25px !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    box-shadow: -6px -6px 10px rgba(253,251,211,.2), 6px 6px 10px rgba(0,0,0,.8);
+}
+
+@media screen and (max-width: 990px) {
+    .signup_form {
+        padding: 1rem;
+        margin: 0;
+        margin-block: 1.5rem;
+    }
+    
+    .lower_col {
+        margin-top: 15px !important;   
+     }
+}

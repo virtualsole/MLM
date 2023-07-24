@@ -1,0 +1,334 @@
+/* Staking Component */
+
+.staking {
+    line-height: 1.3rem;
+    font-weight: 500;
+}
+
+.staking_span {
+    color: #d2555b !important;
+}
+
+.upper_staking {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upper_left_staking {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.middle_img_staking {
+    width: 28%;
+}
+
+.middle_image_staking {
+    width: 90%;
+}
+
+.upper_right_staking {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.stakes_right_col {
+    background-color: var(--head-bg);
+    border-radius: 34.5px;
+    padding: 2rem;
+    display: block;
+    margin-top: 5.5rem;
+}
+
+.stake_table {
+    display: block;
+    background: var(--head-bg);
+    width: fit-content;
+    padding: 2.5rem 2rem;
+    border-radius: 34.5px !important;
+}
+
+.staking Table {
+    border-bottom: 3px dashed var(--head-btn)  !important;
+    color: var(--table-clr) !important;
+}
+
+.staking Table tr {
+    border-bottom: 2px dotted var(--head-btn)  !important;
+}
+
+.text_td {
+    text-align: center;
+}
+
+.stake_maxfine_p {
+    color: hsla(0,0%,100%,.8);
+    font-size: .7rem;
+    margin: 0 !important;
+}
+
+@media screen and (max-width: 990px) {
+    
+    .stake_table {
+        background: var(--head-bg);
+        width: 100%;
+        margin: auto;
+    }
+
+    .text_td {
+        text-align: justify;
+    }
+
+    .stakes_right_col {
+        padding-bottom: 2rem;
+        margin-top: 0%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .text_td {
+        text-align: center;
+    }
+
+    .upper_staking {
+        align-items: center;
+    }
+
+    .upper_left_staking {
+        line-height: 1rem;
+        gap: .5rem;
+        font-size: .7rem;
+    }
+
+    .upper_right_staking {
+        line-height: 1rem;
+        gap: .5rem;
+        font-size: .7rem;
+    }
+
+    .middle_img_staking {
+        width: 35%;
+    }
+}
+
+/* staking_connect */
+
+.staking_boxes {
+    display: flex;
+}
+
+.staking_box {
+    flex: 1 1;
+    cursor: pointer;
+    background-color: #d2555b;
+    padding: 16px;
+    color: hsla(0,0%,100%,.4);
+    border: 2px solid transparent;
+    transition: all .3s ease-in-out;
+    text-align: center;
+    margin: 0 4px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.staking_box:hover {
+    color: #fff !important;
+    border: 1px solid rgb(141, 2, 2); 
+    font-weight: 500;
+}
+
+.staking_inputwrap {
+    position: relative;
+}
+
+.staking_input {
+    border-radius: 6px;
+    background-color: hsla(0,0%,100%,.7);
+    color: #d2555b;
+    outline: none;
+    border: 2px solid rgba(210,85,91,.1529411765);
+    transition: all .3s ease-in-out;
+    padding: 8px 16px;
+    width: 100%;
+}
+
+.input_max {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #d2555b;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+    letter-spacing: .125rem;
+}
+
+@media screen and (max-width: 500px) {
+    .stakes_right_col {
+        width: 100%;
+        overflow: scroll;
+    }
+}
+
+/* Vstack Shapes */
+
+.vstack {
+    font-weight: 600;
+    color: var(--primary-color);
+    display: block;
+    margin: 2% 0%;
+  }
+  
+  @media screen and (max-width: 375px) {
+    .vstack {
+        font-size: .8rem;
+        font-weight: 700;
+    }
+  }
+
+  .first_two {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @media screen and (max-width:550px) {
+    .first_two {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  
+  @media screen and (max-width:350px) {
+    .first_two {
+      align-items: center;
+    }
+  }
+  
+  .first {
+    background-image: url('../assets/box.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 110px;
+    height: 85px;
+  }
+  
+  .shape_content {
+    display: block;
+    margin-block: 1.1rem;
+    margin-inline: 3.8rem
+  }
+  
+  .second {
+    background-image: url('../assets/box.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 110px;
+    height: 85px;
+  }
+  
+  .second_two {
+    display: flex;
+    justify-content: space-around;
+    gap: 11rem;
+    margin: 16px 0px;
+  }
+  
+  @media screen and (max-width:550px) {
+    .second_two {
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 1rem;
+    }
+  }
+  
+  @media screen and (max-width:350px) {
+    .second_two {
+      align-items: center;
+    }
+  }
+  
+  .third {
+    background-image: url('../assets/box.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 110px;
+    height: 85px;
+  }
+  
+  .four {
+    background-image: url('../assets/box.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 110px;
+    height: 85px;
+  }
+  
+  .third_two {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 16px 0px;
+  }
+  
+  @media screen and (max-width:550px) {
+    .third_two {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  
+  @media screen and (max-width:350px) {
+    .third_two {
+      align-items: center;
+    }
+  }
+  
+  .five {
+    background-image: url('../assets/box.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 110px;
+    height: 85px;
+  }
+  
+  .six {
+    background-image: url('../assets/box.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 110px;
+    height: 85px;
+  }
+  
+  .last_one {
+    display: flex;
+    justify-content: center !important;
+    margin: 16px 0px;
+  }
+  
+  @media screen and (max-width:550px) {
+    .last_one {
+      justify-content: flex-end !important;
+      gap: 1rem;
+    }
+  }
+  
+  @media screen and (max-width:350px) {
+    .last_one {
+      justify-content: center !important;
+    }
+  }
+  
+  .seven {
+    background-image: url('../assets/box.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 110px;
+    height: 85px;
+  }
