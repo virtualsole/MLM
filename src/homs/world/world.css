@@ -1,0 +1,45 @@
+.world_heading {
+    font-size: 90px;
+    font-weight: 700;
+    margin-top: 170px !important;
+}
+
+.span1 {
+    color: #fff;
+    border: 1px solid #29ccc4;
+    padding: 0.8em 0;
+    background: #29ccc4;
+    border-radius: 70%;
+
+}
+
+.span2 {
+    color: #29ccc4;
+}
+
+@media only screen and (max-width: 600px) {
+    .world_heading {
+        font-size: 50px;
+        margin-top: 50px !important; 
+    }
+    .span1 {
+        border: none;
+        color: #29ccc4;
+        background: none;
+    }
+    .jsx {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .world_heading {
+        font-size: 50px;
+        margin-top: 50px !important; 
+    }
+    .span1 {
+        border: none;
+        color: #29ccc4;
+        background: none;
+    }
+        
+}

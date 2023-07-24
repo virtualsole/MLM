@@ -10,6 +10,8 @@ import Signup from "./components/Sign_in Sign_up/Signup";
 import VelaSignIn from "./components/Sign_in Sign_up/VelaSignIn";
 import Front from "./components/front/Front";
 import Referral from "./components/referral/Referral";
+import Homer from './components/Homer/Homer'
+
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -48,6 +50,7 @@ function App() {
           ></Route>
           <Route element={<PrivateRoutes />}>
             <Route path="home" element={<Head />}>
+                 <Route path="home" element={<Homer />} />
               <Route path="staking" element={<Staking />} />
               <Route path="stats" element={<Stats />} />
               <Route path="network_stats" element={<Network_stats />} />

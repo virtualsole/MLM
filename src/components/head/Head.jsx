@@ -73,6 +73,11 @@ const Head = () => {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="m-auto head_nav_1">
                 <Nav.Link>
+                  <Link to={"home/home"}>
+                    <span className="fw-bold">Home</span>
+                  </Link>
+                </Nav.Link>
+                <Nav.Link>
                   <Link to={"/home/staking"}>
                     <span className="fw-bold">Staking</span>
                   </Link>
