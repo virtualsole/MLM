@@ -5,7 +5,7 @@ import { AiOutlineUsergroupDelete } from "react-icons/ai";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { MdGroups } from "react-icons/md";
 import { BsFillHeartbreakFill } from "react-icons/bs";
-import user from "../assets/level_user.svg";
+// import user from "../../assets/Level_user.svg";
 import heart from "../assets/level_heart.svg";
 
 import "../styles/levels.css";
@@ -17,6 +17,9 @@ import { toast } from "react-toastify";
 
 const Props_levels = ({ item, index }) => {
   const [show, setShow] = useState(false);
+  useEffect(() => {
+    window.scrollTo(0,0)
+  },[])
   return (
     <>
       <div className="levels">
@@ -27,8 +30,8 @@ const Props_levels = ({ item, index }) => {
                 <div className="level1_content">
                   <h5>level:{index}</h5>
                   <span>
-                    {" "}
-                    <img src={user} alt="" style={{ width: "20%" }} /> {item}{" "}
+                    
+                    <img src={heart} alt="" style={{ width: "20%" }} /> {item}
                   </span>
                   {/* <span>
                     {" "}

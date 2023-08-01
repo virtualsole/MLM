@@ -1,5 +1,12 @@
 /* Staking Component */
-
+.stack-bg {
+  background-image: url("../../assets/defi-banner.svg") !important;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+ 
+}
 .staking {
     line-height: 1.3rem;
     font-weight: 500;

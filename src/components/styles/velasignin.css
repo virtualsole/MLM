@@ -49,5 +49,6 @@
     border-radius: 2em;
     transition: 0.15s ease-in-out;
     border: none !important;
+    outline: none;
     background-color: var(--bg-offhead) !important;
   }

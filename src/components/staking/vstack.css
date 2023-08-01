@@ -1,18 +1,74 @@
+
 .card-pic {
-  background-image: url("../assets/box.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
+background-image: url('../../assets/Card-01-01.svg');
+background-position: center;
+background-size: cover;
+color: #000;
+display: flex;
   flex-direction: column;
   align-self: center;
   -webkit-box-pack: center;
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
+  position: relative;
   min-width: 294px;
   height: 103px;
   padding: 0px 16px;
   margin: 12px 0px;
+  border: none !important;
+  border-radius: 15px;
+  overflow: hidden;
+
+  box-shadow: 0px 0px 30px rgba(7, 17, 24, 0.12);
 }
+
+.card-pic::after {
+  content: '';
+	position: absolute;
+	right:0;
+	top:0;
+	width:0;
+	box-sizing: border-box;
+	height:0;
+	border-top:3px solid transparent;
+	border-right: 3px solid transparent;
+  border-radius: 5px;
+  border-style: double;
+  /* padding: -0.3rem; */
+	transition: all .8s ease;
+  overflow: hidden;
+}
+
+.card-pic::before {
+  content: '';
+	position: absolute;
+	left:0;
+	bottom:0;
+  overflow: hidden;
+
+	width:0;
+	box-sizing: border-box;
+	height: 0;
+	border-bottom:3px solid transparent;
+	border-left: 3px solid transparent;
+  border-radius: 5px;
+
+  border-style: double;
+  /* padding: -0.3rem; */
+	transition: all .8s ease;
+}
+
+
+
+
+.card-pic:hover::after,
+.card-pic:hover::before{
+  border-color: #8dece8 ;
+  width: 100%;
+  height: 100%;
+}
+
 .text-value {
   margin-top: 15px;
   color:var(--text-value);
@@ -22,7 +78,7 @@
 }
 .Vstack-title {
   color: var(--Vstack-title);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.5;
   opacity: 0.8;
   font-size: 15px;
@@ -31,5 +87,13 @@
 @media (max-width: 450px) {
   .card-pic {
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
+  .card-pic:hover::after,
+  .card-pic:hover::before  {
+  display: none;
 }
+}
+
+

@@ -10,7 +10,7 @@ const Staking = () => {
 
     <div className="row mt-5 gx-0">
         <div className="col-lg-3 col-md-3 ">
-            <div className="bg-stak p-3 mb-2">
+            <div className="bg-stak p-3 py-5 mb-2">
                 <h1 className='page_heading mb-3'>On this page</h1>
                 <h3 className='page_heading2'>Staking Basics</h3>
                 <p className='text-light mt-4'>What is staking?</p>

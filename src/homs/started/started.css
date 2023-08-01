@@ -1,5 +1,5 @@
 .started_bg {
-    background-color: #e9faf9;
+    background-color: var(--start-bg);
 }
 
 .vert-move {
@@ -126,7 +126,7 @@ img.vert-move {
 .dashes {
     position: relative;
     top: -2rem;
-    left: calc((100vw / 6) * (5/8));
+    left: calc((100vw / 6) * (5/9));
     
    color: #29ccc4;
     height:.7rem;
@@ -137,12 +137,15 @@ img.vert-move {
 .dashesd {
     position: relative;
     top: -2.5rem;
-    left: calc((100vw / 6) * (5/8));
+    left: calc((100vw / 6) * (5/9));
     
    color: #29ccc4;
     height:.7rem;
     width: 50%;
     
+}
+.mb-tab {
+    color: #29ccc4;
 }
 
 .tops {
@@ -151,6 +154,8 @@ img.vert-move {
 .tab {
     display: none;
 }
+
+
 
 @media only screen and (max-width: 600px) {
     .responsive {

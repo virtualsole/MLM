@@ -162,7 +162,9 @@ const Referral = () => {
   const handleRegister = async (e) => {
     setRegisterAddress(e.target.value);
   };
-
+  useEffect(() => {
+    window.scrollTo(0,0)
+  },[])
   return (
     <>
       <div className="staking mt-5 mb-5">

@@ -6,7 +6,7 @@ import ResCard from './ResCard'
 const Started = () => {
   return (
     <section className='started_bg'>
-        <div className="container-fluid pt-5">
+        <div className="container pt-5">
             <img className='vert-move mt-5 ms-lg-4' src={play} alt="" />
             <h1 className='start_heading'>Let's get started</h1>
             <p className='start_p'>Choose your wallet and staking seed node operator (SSN) and power the Virtual network while earning rewards.</p>

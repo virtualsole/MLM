@@ -1,11 +1,19 @@
 .home_bg {
-    background-image: url(../../assets/staking.svg);
+  background-image: var(--bg-img2) !important;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
    
  
 }
+/* .home_bg_scnd {
+  background-image: url(../../assets/defi-banner.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+ 
+
+} */
 
 .home_heading {
     font-size: 90px;
@@ -24,6 +32,7 @@
 @media only screen and (max-width: 800px) {
     .home_bg {
         height: 70vh;
+        
     }
   .home_heading {
     font-size: 60px;
