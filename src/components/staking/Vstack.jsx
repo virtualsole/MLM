@@ -64,75 +64,63 @@ const Vstack = () => {
   }, []);
   return (
    <>
+   
    <div className="container">
    <div className="row justify-content-center mt-5">
         <div className="row justify-content-center ">
-          <div className="col-lg-10 col-md-12 ">
+          <div className="col-lg-10 col-md-6 col-sm-12">
             <div className="row justify-content-between ">
-              <div className="col-md-3 card-pic ">
+              <div className="col-lg-3 card-pic ">
                 <div className="p-2">
                   <p className=" text-value"> {userInfo.tottalUserDeposite}</p>
                   <h2 className=" text-center Vstack-title">Total Participants</h2>
                 </div>
               </div>
-              <div className="col-md-3 card-pic ">
+              <div className="col-lg-3 card-pic ">
                 <div className="p-2">
                   <p className=" text-value">{userInfo.totalDepositeInNetwork}</p>
                   <h2 className=" text-center Vstack-title">Total Staked in Network</h2>
                 </div>
               </div>
-            </div>
-          </div>
-          </div>
-          <div className="row justify-content-center">
-          <div className="col-lg-9 col-md-12">
-            <div className="row justify-content-between">
-              <div className="col-md-3 card-pic">
+              <div className="col-lg-3 card-pic ">
                 <div className="p-2">
-                  <p className=" text-value">$436.84 K</p>
+                  <p className=" text-value">{userInfo.totalDepositeInNetwork}</p>
                   <h2 className=" text-center Vstack-title">Total Staked in Network (USD)</h2>
                 </div>
               </div>
-              <div className="col-md-3 card-pic">
-                <div className="p-2">
-                  <p className=" text-value">{userInfo.totalRewardsWithdrawInNetwork}</p>
-                  <h2 className=" text-center Vstack-title">Total Rewards</h2>
-                </div>
-              </div>
             </div>
           </div>
           </div>
-          <div className="row justify-content-center">
-          <div className="col-lg-8 col-md-12">
-            <div className="row justify-content-between">
-              <div className="col-md-3 card-pic">
+        <div className="row justify-content-center mb-5">
+          <div className="col-lg-10 col-lg-12 col-md-6 col-sm-12 ">
+            <div className="row justify-content-between ">
+              <div className="col-lg-3 card-pic ">
                 <div className="p-2">
-                  <p className=" text-value">$</p>
+                  <p className=" text-value"> {userInfo.tottalUserDeposite}</p>
+                  <h2 className=" text-center Vstack-title">Total Rewards</h2>
+                </div>
+              </div>
+              <div className="col-lg-3 card-pic ">
+                <div className="p-2">
+                  <p className=" text-value">{userInfo.totalDepositeInNetwork}</p>
                   <h2 className=" text-center Vstack-title">Total Rewards (USD)</h2>
                 </div>
               </div>
-              <div className="col-md-3 card-pic">
+              <div className="col-lg-3 card-pic ">
                 <div className="p-2">
-                  <p className=" text-value">{userInfo.totalLevelRewardsWithdrawInNetwork}</p>
+                  <p className=" text-value">{userInfo.totalDepositeInNetwork}</p>
                   <h2 className=" text-center Vstack-title">Total Level Withdrawls</h2>
                 </div>
               </div>
             </div>
           </div>
           </div>
-          <div className="row justify-content-center">
-          <div className="col-lg-7 col-md-6 ">
-            <div className="row justify-content-center">
-              <div className="col-md-3 card-pic">
-                <div className="p-2">
-                  <p className=" text-value">$</p>
-                  <h2 className=" text-center Vstack-title">Total Level Withdrawls (USD)</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
+      
+        
+        
+ 
         </div>
+      
    </div>
    </>
   );

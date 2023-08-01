@@ -8,7 +8,7 @@ import {
   Navbar,
   Row,
 } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { BsFillCalendar3EventFill } from "react-icons/bs";
 import logo from "../assets/VPlogo.png";
 
@@ -44,13 +44,16 @@ const Front = () => {
   }, [theme]);
 
   //  After this
-
+const navigate=useNavigate()
   const [showMetaMask, setShowMetaMask] = useState(false);
   const [acc, setAcc] = useState("");
   const [showModaleSignin, setShowModaleSignin] = useState(false);
   const [showModaleReferal, setShowModaleReferal] = useState(false);
   const [showModaleProfile, setShowModaleProfile] = useState(false);
-  const handleShowMetaMask = () => setShowMetaMask(true);
+  // const handleShowMetaMask = () => setShowMetaMask(true);
+  const handleShowMetaMask = () =>{
+    return navigate("/home/homer") };
+
   const handleShowSignin = () => setShowModaleSignin(true);
   const handleShowReferal = () => setShowModaleReferal(true);
   const handleShowProfile = () => setShowModaleProfile(true);

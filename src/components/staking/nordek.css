@@ -23,7 +23,8 @@
 
 .nordek {
     display: block;
-    background: var(--nordek-bg);
+    background: #d6f4f2;
+    
     border-radius: 24.5px;
     padding: 1rem;
     width: auto;
@@ -46,7 +47,8 @@
 
 .back {
     display: block;
-    background: var(--nordek-bg);
+    background: #d6f4f2;
+    
     border-radius: 24.5px;
     padding: 1rem;
     box-shadow: 0px 0px 30px rgba(21,53,80,0.12);
@@ -68,10 +70,10 @@
 }
 
 .rond {
-    border: 1px solid #a0a0a0;
+    border: 1px solid #000;
     border-radius: 24.5px;
     padding: .2rem .5rem;
-    color: #a0a0a0;
+    color: #000;
 }
 
 .scnd_input {
@@ -122,7 +124,7 @@
 }
 
 .ftr-btn {
-    color: #3498db !important;
+    color: #000 !important;
     background: rgba(52,152,219,.1) !important;
     border-color: transparent !important;
 }
@@ -137,7 +139,7 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #000;
   }
 
 .lower_bsc_table h2 {
@@ -145,14 +147,14 @@
 }
 
 .bsc_lower_body Button {
-    background-color: #a0a0a0;
+    background-color: #000;
     border: none;
 }
 
 .bsc_lower_body span {
     font-size: .693em;
     font-weight: 500;
-    color: #a0a0a0;
+    color: #000;
 }
 
 
@@ -178,3 +180,5 @@
 .text-overflow{
     overflow-wrap: break-word;
 }
+
+

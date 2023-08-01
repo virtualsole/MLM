@@ -1,3 +1,6 @@
+import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Head from "./components/head/Head";
 import Staking from "./components/staking/Staking";
 import Footer from "./components/footer/Footer";
@@ -10,13 +13,19 @@ import Signup from "./components/Sign_in Sign_up/Signup";
 import VelaSignIn from "./components/Sign_in Sign_up/VelaSignIn";
 import Front from "./components/front/Front";
 import Referral from "./components/referral/Referral";
+import Homer from './components/Homer/Homer'
+import NotFound from "./components/NotFound";
+
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "../src/components/styles/Main.css";
 
 import "react-toastify/dist/ReactToastify.css";
-
+{
+  /* The following line can be included in your src/index.js or App.js file */
+}
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { ToastContainer } from "react-toastify";
 import PrivateRoutes from "./PrivateRoutes";
 import PublicRoute from "./PublicRoute";
@@ -35,30 +44,42 @@ function App() {
       setUrl(url);
     }
   }, []);
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <>
-      {/* <div className='bg_img'></div> */}
       <Router>
+     
         {/* <Signup /> */}
         <ToastContainer />
+        {/* <Head ></Head> */}
         <Routes>
-          <Route
+          {/* <Route
             path="/referrallink?"
             element={<PublicRoute>{<Front />}</PublicRoute>}
-          ></Route>
-          <Route element={<PrivateRoutes />}>
-            <Route path="home" element={<Head />}>
-              <Route path="staking" element={<Staking />} />
-              <Route path="stats" element={<Stats />} />
-              <Route path="network_stats" element={<Network_stats />} />
-              <Route path="levels" element={<Levels />} />
-              <Route path="statement" element={<Statement />} />
-              <Route path="signin" element={<Signin />} />
-              <Route path="signup" element={<Signup />} />
-              <Route path="velasignin" element={<VelaSignIn />} />
-              <Route path="referral" element={<Referral />} />
-            </Route>
-          </Route>
+          ></Route> */}
+          {/* <Route element={<PrivateRoutes />}> */}
+            {/* <Route path="home" element={<Head />}> */}
+              {/* <PublicRoute> */}
+              <Route path="/home" element={<><Head /><Homer /></>} />
+              <Route path="/staking" element={<><Head /><Staking /></>} />
+              <Route path="/stats" element={<><Head /><Stats /></>} />
+              <Route path="/network_stats" element={<><Head /><Network_stats /></>} />
+              <Route path="/levels" element={<><Head /><Levels /></>} />
+              <Route path="/statement" element={<><Head /><Statement /></>} />
+              <Route path="/signin" element={<><Head /><Signin /></>} />
+              <Route path="/signup" element={<><Head /><Signup /></>} />
+              <Route path="/home/velasignin" element={<><Head /><VelaSignIn /></>} />
+              <Route path="/referral" element={<><Head /><Referral /></>} />
+             
+              <Route path="/" element={<><Head /><Homer /></>} />
+            {/* </Route> */}
+          {/* </Route> */}
+          <Route path="*" element={<NotFound />} />
+
         </Routes>
       </Router>
     </>

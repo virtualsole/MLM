@@ -2,7 +2,8 @@ import { useSelector } from "react-redux";
 import { Outlet, Navigate } from "react-router-dom";
 
 const PrivateRoutes = () => {
-  const isuser = useSelector((state) => state.userAuth.isUser);
+  // const isuser = useSelector((state) => state.userAuth.isUser);
+  const isuser=true
 
   return (
     <div className="bg_Dashboar">

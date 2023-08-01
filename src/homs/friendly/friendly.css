@@ -1,0 +1,66 @@
+.eco_heading {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.eco_p {
+    font-size: 18px;
+}
+
+.arr {
+    border: 1px solid #ffc224;
+    background: #ffc224;
+    width: 301px;
+    height: 252px;
+    margin-left: 150px;
+    border-radius: 15px;
+    
+}
+.current {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    margin-top: 25%;
+    color: #fff;
+    font-size: 20px;
+}
+
+.persnt {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .eco_heading {
+        font-size: 40px!important;
+        margin-top: -190px;
+    }
+    .response {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+       
+    }
+
+    .arr {
+        margin: 0 auto;
+    }
+
+}
+@media only screen and (max-width: 1200px) {
+    .eco_heading {
+        font-size: 40px!important;
+        margin-top: -190px;
+    }
+}

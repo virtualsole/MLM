@@ -1,0 +1,56 @@
+
+
+.num_heading {
+    font-size: 258px;
+    color: #bef0ed;
+    font-weight: 700;
+}
+.plat_heading {
+    font-size: 68px;
+    font-weight: 700;
+    position: relative;
+    top: -11rem;
+    
+}
+
+.plat_p {
+    font-size: 23px;
+    margin-top: -95px;
+} 
+
+
+.carsoual-btn-vrc{
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+    /* background-image: linear-gradient(#8a46ff,#6e38cc); */
+    background-color: #29ccc4;
+    border-radius: 3rem;
+    padding: 10px 14px;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+    transition: all .2s;
+    outline: none;
+    border: none;
+}
+
+
+.carsoual-btn-vrc:hover {
+    /* background-image: linear-gradient(#ffffff,#ffffff); */
+    background-color: #fff;
+    color: #000 !important;
+    text-decoration: none;
+    border: 1px solid #000;
+}
+
+@media only screen and (max-width: 600px){
+    .num_heading {
+        font-size: 200px;
+    }
+    .plat_heading {
+        font-size: 44px;
+    }
+}

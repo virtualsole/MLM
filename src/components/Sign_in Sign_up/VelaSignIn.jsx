@@ -12,26 +12,7 @@ import { useState } from "react";
 import Footer from "../footer/Footer";
 
 const VelaSignIn = () => {
-  const [theme, setTheme] = useState("");
-  const toggleTheme = async () => {
-    if (theme === "dark-theme") {
-      localStorage.setItem("theme", "light-theme");
-      setTheme("light-theme");
-    } else {
-      setTheme("dark-theme");
-      localStorage.setItem("theme", "dark-theme");
-    }
-  };
-  useEffect(() => {
-    if (localStorage.getItem("theme") == null) {
-      document.body.className = "dark-theme";
-      localStorage.setItem("theme", "dark-theme");
-      setTheme("dark-theme");
-    } else {
-      document.body.className = localStorage.getItem("theme");
-      setTheme(localStorage.getItem("theme"));
-    }
-  }, [theme]);
+  
   return (
     <>
       <div className="front2 mt-5">
@@ -105,24 +86,15 @@ const VelaSignIn = () => {
                         <SwitchForm />
                       </div>
                       <h3>User Settings:</h3>
-                      <div className="d-flex justify-content-between mb-3">
-                        <span>Theme:</span>
-                        <div className="form-check form-switch switch ms-auto px-1">
-                          <input
-                            className="form-check-input change ms-auto p-3 text-end light_mode"
-                            onClick={toggleTheme}
-                            type="checkbox"
-                            role="switch"
-                            id="flexSwitchCheckChecked"
-                          />
-                        </div>
-                      </div>
+                
                       <div className="d-flex justify-content-between gap-5">
                         <span>Language:</span>
                         <Form.Select aria-label="Default select example">
                           <option value="English">English</option>
                           <option value="Chinese">Chinese</option>
                           <option value="Spanish">Spanish</option>
+                          <option value="Spanish">Russian</option>
+                          <option value="Spanish">Hindi</option>
                         </Form.Select>
                       </div>
                     </Col>

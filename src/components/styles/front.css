@@ -8,7 +8,7 @@
     background-color: var(--front-bg) !important;
     color: var(--primary-color);
     padding-inline: 1rem;
-    width: fit-content;
+    width: fit-content !important;
   }
 
   .modal-content {
