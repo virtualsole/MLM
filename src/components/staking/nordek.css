@@ -58,6 +58,22 @@
     position: relative;
 }
 
+.nordek_right_firs1_input {
+    position: relative;
+    border: 1px solid #9dc0fa;
+    padding: 0.8rem;
+    border-radius: 10px;
+}
+
+.nordek_right_firs1_input input {
+    border-color: #9dc0fa;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
 .symbol {
     position: absolute;
     bottom: 12px;
@@ -175,6 +191,16 @@
     .checkboxes {
         flex-direction: column;
     }
+    
+.nordek_right_firs1_input input {
+    width: 100%;
+}
+}
+@media screen and (max-width: 1200px) {
+    
+.nordek_right_firs1_input input {
+    width: 100%;
+}
 }
 
 .text-overflow{

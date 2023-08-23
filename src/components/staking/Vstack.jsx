@@ -66,60 +66,107 @@ const Vstack = () => {
    <>
    
    <div className="container">
-   <div className="row justify-content-center mt-5">
-        <div className="row justify-content-center ">
-          <div className="col-lg-10 col-md-6 col-sm-12">
+     
+      
             <div className="row justify-content-between ">
-              <div className="col-lg-3 card-pic ">
-                <div className="p-2">
-                  <p className=" text-value"> {userInfo.tottalUserDeposite}</p>
+              <div className="col-lg-4 ">
+              <a class="cart step-res mb-3" href="#" >
+              <div className="p-2">
+                  <p className=" text-value">{userInfo.totalDepositeInNetwork}</p>
                   <h2 className=" text-center Vstack-title">Total Participants</h2>
                 </div>
+    <div class="go-corner" href="#">
+      <div class="go-arrow">
+        →
+      </div>
+    </div>
+  </a>
+          
               </div>
-              <div className="col-lg-3 card-pic ">
-                <div className="p-2">
+              <div className="col-lg-4 ">
+              <a class="cart step-res mb-3 mb-lg-3 mb-md-3 " href="#">
+              <div className="p-2">
                   <p className=" text-value">{userInfo.totalDepositeInNetwork}</p>
                   <h2 className=" text-center Vstack-title">Total Staked in Network</h2>
                 </div>
+    <div class="go-corner" href="#">
+      <div class="go-arrow">
+        →
+      </div>
+    </div>
+  </a>
+          
               </div>
-              <div className="col-lg-3 card-pic ">
-                <div className="p-2">
+              <div className="col-lg-4 ">
+              <a class="cart step-res mb-3 mb-lg-3 mb-md-3 " href="#">
+              <div className="p-2">
                   <p className=" text-value">{userInfo.totalDepositeInNetwork}</p>
                   <h2 className=" text-center Vstack-title">Total Staked in Network (USD)</h2>
                 </div>
+    <div class="go-corner" href="#">
+      <div class="go-arrow">
+        →
+      </div>
+    </div>
+  </a>
+          
               </div>
+
+           
+   
             </div>
-          </div>
-          </div>
-        <div className="row justify-content-center mb-5">
-          <div className="col-lg-10 col-lg-12 col-md-6 col-sm-12 ">
-            <div className="row justify-content-between ">
-              <div className="col-lg-3 card-pic ">
-                <div className="p-2">
-                  <p className=" text-value"> {userInfo.tottalUserDeposite}</p>
+            <div className="row justify-content-between">
+              <div className="col-lg-4 ">
+              <a class="cart step-res mb-3 mb-lg-3 mb-md-3 " href="#">
+              <div className="p-2">
+                  <p className=" text-value">{userInfo.totalDepositeInNetwork}</p>
                   <h2 className=" text-center Vstack-title">Total Rewards</h2>
                 </div>
+    <div class="go-corner" href="#">
+      <div class="go-arrow">
+        →
+      </div>
+    </div>
+  </a>
+          
               </div>
-              <div className="col-lg-3 card-pic ">
-                <div className="p-2">
+              <div className="col-lg-4 card-pic ">
+              <a class="cart step-res mb-3 mb-lg-3 mb-md-3 " href="#">
+              <div className="p-2">
                   <p className=" text-value">{userInfo.totalDepositeInNetwork}</p>
                   <h2 className=" text-center Vstack-title">Total Rewards (USD)</h2>
                 </div>
+    <div class="go-corner" href="#">
+      <div class="go-arrow">
+        →
+      </div>
+    </div>
+  </a>
+          
               </div>
-              <div className="col-lg-3 card-pic ">
-                <div className="p-2">
+              <div className="col-lg-4 card-pic ">
+              <a class="cart step-res mb-3 mb-lg-3 mb-md-3 " href="#">
+              <div className="p-2">
                   <p className=" text-value">{userInfo.totalDepositeInNetwork}</p>
                   <h2 className=" text-center Vstack-title">Total Level Withdrawls</h2>
                 </div>
+    <div class="go-corner" href="#">
+      <div class="go-arrow">
+        →
+      </div>
+    </div>
+  </a>
+          
               </div>
             </div>
-          </div>
-          </div>
+     
+         
+    
       
         
         
  
-        </div>
+
       
    </div>
    </>

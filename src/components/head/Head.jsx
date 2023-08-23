@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import logo from "../assets/VPlogo.png";
+import "../styles/head.css";
+import logo from "../../assets/logod.jpg";
 import { FaUser } from "react-icons/fa";
 
 import { Outlet } from "react-router-dom";
@@ -9,10 +10,17 @@ import { Outlet } from "react-router-dom";
 import { loadWeb3 } from "../../apis/apis";
 import { updateWalletStatus } from "../../store/walletSlice";
 import { useDispatch, useSelector } from "react-redux";
-import "../styles/head.css";
 import { LinkContainer } from "react-router-bootstrap";
 const Head = () => {
+  const [showNavigation, setNavigation] = useState(false);
 
+  const handleToggleNav = () => {
+    setNavigation(!showNavigation);
+  };
+
+  const closeNav = () => {
+    setNavigation(false);
+  };
   // Navbar Darkmode useEffect
   
   //After this
@@ -41,12 +49,12 @@ const Head = () => {
 
 
 
-
+ 
   
   return (
     <>
       <div className="head">
-        <Navbar collapseOnSelect expand="xl" className="me-auto sticky-header">
+        <Navbar collapseOnSelect expand="xl" className="me-auto sticky-header" show={showNavigation} onHide={handleToggleNav}>
           <Container>
             <Nav className="d-block d-lg-none">
               <Nav.Link>
@@ -64,37 +72,37 @@ const Head = () => {
                 <img src={logo} alt="" className="head_img responsive2" />
               </Link>{" "}
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle aria-controls="basic-navbar-nav"  />
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="m-auto head_nav_1">
+              <Nav className="m-auto head_nav_1" >
                 <Nav.Link>
-                  <Link to={"/home"}>
-                    <span className="fw-bold">Home</span>
-                  </Link>
+                  <LinkContainer to={"/home"}>
+                    <span className="head_others" onClick={closeNav}>Home</span>
+                  </LinkContainer>
                 </Nav.Link>
                 <Nav.Link>
                   <LinkContainer to={"/staking"}>
-                    <span className="head_others">Staking</span>
+                    <span className="head_others" onClick={closeNav}>Staking</span>
                   </LinkContainer>
                 </Nav.Link>
                 <Nav.Link>
                 <LinkContainer to={"/stats"}>
-                  <span className="head_others">Launchpad</span>
+                  <span className="head_others" onClick={closeNav}>Launchpad</span>
                   </LinkContainer>
                 </Nav.Link>
                 <Nav.Link>
                 <LinkContainer to={"/network_stats"}>
-                  <span className="head_others">Vesting</span>
+                  <span className="head_others" onClick={closeNav}>Vesting</span>
                   </LinkContainer>
                 </Nav.Link>
                 <Nav.Link>
                 <LinkContainer to={"/levels"}>
-                  <span className="head_others">Levels</span>
+                  <span className="head_others" onClick={closeNav}>Levels</span>
                   </LinkContainer>
                 </Nav.Link>
                 <Nav.Link>
                 <LinkContainer to={"/referral"}>
-                  <span className="head_others">Referral</span>
+                  <span className="head_others" onClick={closeNav}>Referral</span>
                   </LinkContainer>
                 </Nav.Link>
 

@@ -26,6 +26,17 @@
     font-size: 90px;
 
 }
+.lanch_head {
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.lanch_head span {
+    background: #ffc224;
+    padding: 0.5rem;
+    font-size: 90px;
+
+}
 
 
 
@@ -35,10 +46,19 @@
         
     }
   .home_heading {
-    font-size: 60px;
+    font-size: 50px;
+  }
+  .lanch_head {
+    font-size: 50px !important;
   }
   .home_heading span {
     font-size: 46px;
+  }
+  .lanch_head span {
+    font-size: 46px;
+
+    display: block;
+    width: fit-content;
   }
   .svgs {
     display: none;
@@ -51,6 +71,15 @@
     } 
     .svgs {
         display: none;
+      }
+      .lanch_head {
+        font-size: 80px;
+      }
+      .lanch_head span {
+        font-size: 46px;
+    
+        display: block;
+        width: fit-content;
       }
 }
 
@@ -77,10 +106,10 @@
   }
   
   @keyframes move {
-    0%   { transform: scale(1)   translate(0, 0) rotate(0); fill: var(--firstColor); filter: drop-shadow( 20px 14px 10px var(--dropShadowColor)); }
+    0%   { transform: scale(1)   translate(0, 0) rotate(44deg); fill: var(--firstColor); filter: drop-shadow( 20px 14px 10px var(--dropShadowColor)); }
   
   
     75%  { transform: scale(0.8) translate(5vw, 10h) rotate(55deg); fill: var(--fourthColor); filter: drop-shadow( 14px 14px 6px var(--dropShadowColor)); }
-    100% { transform: scale(1)   translate(0, 0) rotate(0); fill: var(--firstColor); filter: drop-shadow( 20px 14px 10px var(--dropShadowColor)); }
+    100% { transform: scale(1)   translate(0, 0) rotate(44deg); fill: var(--firstColor); filter: drop-shadow( 20px 14px 10px var(--dropShadowColor)); }
   }
   

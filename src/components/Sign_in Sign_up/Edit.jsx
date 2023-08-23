@@ -1,34 +1,25 @@
-import React from 'react';
-// import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import '../styles/velasignin.css'
+import React from 'react'
 import { LinkContainer } from 'react-router-bootstrap';
 
-function VelaSignIn() {
-  
-	return (
-
-<div className="container">
-      <div className="main-body">
-        {/* Breadcrumb */}
-       
-
-        <div className="row gutters-sm">
-          <div className="col-md-4 mb-3">
-            <div className="card">
-              <div className="card-body">
-              <div class="d-flex flex-column align-items-center text-center">
-                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150" />
-                    <div class="mt-3">
-                      <h4>Umair Ali</h4>
-                      <p class="text-secondary mb-1">Front end Developer</p>
-                      <p class="text-muted font-size-sm">Lahore</p>
-                      <button class="btn btn-primary">Follow</button>
-                      <button class="btn btn-outline-primary mx-2">Message</button>
-                    </div>
-                  </div>
+const Edit = () => {
+  return (
+    <div className="container">
+    <div className="main-body">
+      <div className="row">
+        <div className="col-lg-4">
+          <div className="card">
+            <div className="card-body">
+              <div className="d-flex flex-column align-items-center text-center">
+                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" className="rounded-circle p-1" width="110" />
+                <div className="mt-3">
+                  <h4>Umair Ali</h4>
+                  <p className="text-secondary mb-1">front end Developer</p>
+                  <p className="text-muted font-size-sm">Lahore</p>
+                  <button className="btn btn-primary">Follow</button>
+                  <button className="btn btn-outline-primary mx-3">Message</button>
+                </div>
               </div>
-            </div>
-            <div className="card" style={{marginTop: "45px"}}>
+              <hr className="my-4" />
               <ul className="list-group list-group-flush">
               <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                     <h6 class="mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe mr-2 icon-inline"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg><span className='mx-3'>Website</span></h6>
@@ -50,71 +41,69 @@ function VelaSignIn() {
               </ul>
             </div>
           </div>
-          <div className="col-md-8">
-            <div className="card mb-4">
-              <div className="card-body">
-              <div class="row">
-                    <div class="col-sm-3">
-                      <h6 class="mb-0">Full Name</h6>
-                    </div>
-                    <div class="col-sm-9 text-secondary">
-                     Umair Ali
-                    </div>
-                  </div>
-             
-                  <div class="row mt-3">
-                    <div class="col-sm-3">
-                      <h6 class="mb-0">Email</h6>
-                    </div>
-                    <div class="col-sm-9 text-secondary">
-                    Umair@gmail.com
-                    </div>
-                  </div>
-             
-                  <div class="row mt-3">
-                    <div class="col-sm-3">
-                      <h6 class="mb-0">Phone</h6>
-                    </div>
-                    <div class="col-sm-9 text-secondary">
-                      +923470432774
-                    </div>
-                  </div>
-             
-                  <div class="row mt-3">
-                    <div class="col-sm-3">
-                      <h6 class="mb-0">Mobile</h6>
-                    </div>
-                    <div class="col-sm-9 text-secondary">
-                    +923470432774
-                    </div>
-                  </div>
-             
-                  <div class="row mt-3">
-                    <div class="col-sm-3">
-                      <h6 class="mb-0">Address</h6>
-                    </div>
-                    <div class="col-sm-9 text-secondary">
-                    Lahore
-                    </div>
-                  </div>
-             
-                  <div class="row mt-3">
-                    <div class="col-sm-12">
-                      <LinkContainer to={"/edit"}>
-                      <a className="btn btn-danger text-light" target="__blank">Edit</a>
-                      </LinkContainer>
-                    </div>
-                  </div>
+        </div>
+        <div className="col-lg-8">
+          <div className="card">
+            <div className="card-body">
+            <div class="row mb-3">
+              <div class="col-sm-3">
+                <h6 class="mb-0">Full Name</h6>
+              </div>
+              <div class="col-sm-9 text-secondary">
+                <input type="text" class="form-control"  />
               </div>
             </div>
-
-            <div className="row gutters-sm">
-              <div className="col-sm-6 mb-3">
-                <div className="card h-100">
-                  <div className="card-body">
+            <div class="row mb-3">
+              <div class="col-sm-3">
+                <h6 class="mb-0">Email</h6>
+              </div>
+              <div class="col-sm-9 text-secondary">
+                <input type="text" class="form-control"  />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-sm-3">
+                <h6 class="mb-0">Phone</h6>
+              </div>
+              <div class="col-sm-9 text-secondary">
+                <input type="text" class="form-control"  />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-sm-3">
+                <h6 class="mb-0">Mobile</h6>
+              </div>
+              <div class="col-sm-9 text-secondary">
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-sm-3">
+                <h6 class="mb-0">Address</h6>
+              </div>
+              <div class="col-sm-9 text-secondary">
+                <input type="text" class="form-control"  />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-9 text-secondary">
+                <input type="button" class="btn btn-primary px-4" value="Save Changes" />
+                <LinkContainer to={"/velasignin"}>
+                      <a className="btn btn-danger text-light mx-3" target="__blank">Back</a>
+                      </LinkContainer>
+              </div>
+             
+            </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-sm-12">
+              <div className="card">
+              <div className="card-body">
                   <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2"></i>Notifications</h6>
-                      <div style={{height: "280px", overflowY: "scroll"}}>
-                      <div class="p-3 d-flex align-items-center border-bottom osahan-post-header">
+                      
+                  <div class="p-3 d-flex align-items-center border-bottom osahan-post-header">
                       <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="" /></div>
                       <div class="font-weight-bold mr-3">
                           <div class="text-truncate">DAILY RUNDOWN: SATURDAY</div>
@@ -181,75 +170,16 @@ function VelaSignIn() {
                           <div class="text-right text-muted pt-1">4d</div>
                       </span>
                   </div>
-                      </div>
-                
                   
                   </div>
-                </div>
-              </div>
-              <div className="col-sm-6 mb-3">
-                <div className="card h-100">
-                  <div className="card-body">
-                  <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2"></i>Reminder</h6>
-
-                  <div class="col-md-5" style={{height: "280px",   width: "100%", overflowY: "scroll"}}>
-            <div class="widget widget-reminder">
-                <div class="widget-reminder-header">TODAY, Aug 19</div>
-                <div class="widget-reminder-container">
-                    <div class="widget-reminder-time">
-                        09:00<br />
-                        12:00
-                    </div>
-                    <div class="widget-reminder-divider bg-success"></div>
-                    <div class="widget-reminder-content">
-                        <h4 class="widget-title">Meeting with HR</h4>
-                        <div class="widget-desc"><i class="fa fa-map-pin"></i> Conference Room</div>
-                    </div>
-                </div>
-                <div class="widget-reminder-container">
-                    <div class="widget-reminder-time">
-                        20:00<br />
-                        23:00
-                    </div>
-                    <div class="widget-reminder-divider bg-primary"></div>
-                    <div class="widget-reminder-content">
-                        <h4 class="widget-title">Dinner with Richard</h4>
-                        <div class="widget-desc"><i class="fa fa-map-pin"></i> Tom's Too Restaurant</div>
-                        <div class="m-t-15">
-                            <a href="#" class="pull-right">Contact</a>
-                            <img src="https://bootdey.com/img/Content/avatar/avatar1.png" width="16" class="img-circle pull-left m-r-5" alt="" /> Richard Leong
-                        </div>
-                    </div>
-                </div>
-                <div class="widget-reminder-header">TOMORROW, Aug 20</div>
-                <div class="widget-reminder-container">
-                    <div class="widget-reminder-time">All day</div>
-                    <div class="widget-reminder-divider bg-purple"></div>
-                    <div class="widget-reminder-content">
-                        <h4 class="widget-title"><i class="fa fa-gift text-purple"></i> Terry Birthday</h4>
-                    </div>
-                </div>
-                <div class="widget-reminder-container">
-                    <div class="widget-reminder-time">
-                        00:00<br />
-                        00:30
-                    </div>
-                    <div class="widget-reminder-divider bg-danger"></div>
-                    <div class="widget-reminder-content">
-                        <h4 class="widget-title">Server Maintenance</h4>
-                        <div class="widget-desc"><i class="ti-pin"></i> Data Centre</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-	);
+  </div>
+  )
 }
-export default VelaSignIn;
+
+export default Edit

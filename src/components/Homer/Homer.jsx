@@ -6,6 +6,7 @@ import Started from '../../homs/started/Started'
 import Platform from '../../homs/platform/Platform'
 import Staking from '../../homs/staking/Staking'
 import Footer from '../footer/Footer'
+import Step from '../../homs/steps/Step'
 const Homer = () => {
   useEffect(() => {
     window.scrollTo(0,0)
@@ -16,7 +17,12 @@ const Homer = () => {
       <Friendly />
       <World />
       <Started />
+ 
       <Platform />
+    
+     
+
+      <Step />
       <Staking />
       <Footer />
     </>

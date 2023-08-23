@@ -5,7 +5,7 @@ import logo from "../assets/VPlogo.png";
 import img1 from "../assets/img1.svg";
 import img2 from "../assets/img2.svg";
 import img3 from "../assets/img3.svg";
-import greycircle from "../assets/grey-circle.png";
+import greycircle from "../../assets/Square Fit_202253152826283.jpg";
 import { FaWallet } from "react-icons/fa";
 
 import "../styles/staking.css";
@@ -235,8 +235,8 @@ const Staking = () => {
         </div>
         <Container>
           <Row>
-            <h1 className="text-center mb-3">
-              <span className="staking_span">VIRTUAL</span> STAKING
+            <h1 className="text-center mb-3 fon">
+              VIRTUAL STAKING
             </h1>
             <Vstack />
 
@@ -273,7 +273,7 @@ const Staking = () => {
                     </div>
                     <div className="line"></div>
                     <div>
-                      <p>0 VRC</p>
+                      <p>0 USDT</p>
                       <span className="span">TOTAL STAKED</span>
                     </div>
                   </div>
@@ -455,7 +455,7 @@ const Staking = () => {
                           <div className="validation">
                             <span className="d-flex gap-2">
                               Validated By
-                              <a href="/" target="blank">
+                              <a href="/"target="blank">
                                 Validator: Ankr
                               </a>
                             </span>
@@ -744,18 +744,18 @@ const Staking = () => {
             <Col lg={4}>
               <div className="nordek_right_staking back">
                 <Form>
-                  <div className="shapes mb-3 d-flex justify-content-between align-items-center">
+                  <div className="shapes mb-3 d-flex justify-content-between align-items-center gap-3">
                     <div className="circle">
-                      <img src={greycircle} alt="" width={70} />
+                      <img src="https://bootdey.com/img/Content/avatar/avatar7.png" className="rounded-circle"  alt="Admin"  />
                     </div>
-                    <div className="lines d-flex flex-column gap-2 w-75">
-                      <div className="line1 rounded"></div>
+                    <div className="lines d-flex flex-column gap-3 w-75">
+                      <div className="">Umair Ali</div>
                       <div className="line2 rounded"></div>
                     </div>
                   </div>
 
-                  <div className="d-flex justify-content-end mt-3">
-                    <p>Balance -</p>
+                  <div className="d-flex justify-content-end mt-3 gap-3">
+                    <p>Balance : </p>
                     <span>{userInfo?.balance} VRC</span>
                   </div>
                   <div className="nordek_right_first_input">
@@ -770,7 +770,7 @@ const Staking = () => {
                     <span className="symbol">VRC</span>
                   </div>
 
-                  <div className="percentages d-flex justify-content-around mt-3">
+                  <div className="percentages d-flex justify-content-around mt-3" style={{cursor: "pointer"}}>
                     {[25, 50, 75, 100].map((value) => {
                       return (
                         <div

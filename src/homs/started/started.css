@@ -71,7 +71,7 @@ img.vert-move {
         justify-content: center;
         text-align: center;
         align-items: center;
-        margin: 15% auto;
+        margin: 10% auto;
         font-size: 23px;
         color: #fff;
     }
@@ -164,6 +164,7 @@ img.vert-move {
         align-items: center;
         text-align: center;
         margin: 0 auto;
+  
     }
 .desk {
     display: none;

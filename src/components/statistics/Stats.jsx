@@ -159,10 +159,10 @@ const Stats = () => {
       <div className="lanch-bg">
 
 <div className="container">
-      <div className="row">
+      <div className="row mb-lg-0 mb-5">
           <div className="col-lg-6 col-sm-12 mt-lg-5">
               <h1 className='home_heading mt-lg-5'>
-              Secure the Virtual <span style={{background: "crimson", color: "#fff"}}>Launchpad
+              Secure the Virtual <span style={{background: "crimson", color: "#fff",}}>Launchpad
 
 </span>
               </h1>
@@ -217,7 +217,13 @@ const Stats = () => {
               />
 
               <div className="below_btns">
-                <div className="nordek_right_first_input">
+                <h1 className="mx-auto fs-2 fon">
+                Withdrawal request 
+                </h1>
+                <p className="mx-auto text-center">The money will crecfted to your account within 1 minute to 3 days-
+Processing may take up to 24 hours, Please contact if
+the withdrawal is not completed within this penod.</p>
+                <div className="nordek_right_firs1_input">
                   <Form.Control
                     type="number"
                     placeholder="Enter Withdraw amount"
@@ -226,15 +232,35 @@ const Stats = () => {
                     }}
                     value={withdrawAmount}
                   />
-                </div>
-                <div>
-                  <Button className="stats_btn1" onClick={withdrawl}>
-                    Withdraw Rewards
+                  <Form.Control
+                    type="date"
+                    placeholder="Enter Date"
+                   
+                    className="mt-3"
+                   
+                  />
+                  <div className="heads px-2 mt-3">
+              <span style={{fontWeight: "700"}}>Status:
+              </span>
+              <div class="audio">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+              {/* <span style={{color: "#2c2c"}}>Processing...</span> */}
+            </div>
+                  <p className="mx-auto text-center mt-3">Continue trading while you'r withdrawal request is being<br></br>
+processed.</p>
+                  <div>
+                  <Button className="stats_btn1 mx-auto mt-3" onClick={withdrawl}>
+                  Continue  Withdraw
                   </Button>
                 </div>
+                </div>
+                
 
                 <div>
-                  <Link to={"/home/statement"}>
+                  <Link to={"/statement"}>
                     <Button className="stats_btn2 mb-3">Statement Details</Button>
                   </Link>
                 </div>
@@ -242,8 +268,9 @@ const Stats = () => {
             </Col>
           </Row>
         </Container>
-        <Footer />
+  
       </div>
+      <Footer />
     </>
   );
 };

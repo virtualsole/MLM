@@ -1,0 +1,33 @@
+.step_heading {
+    font-size: 55px;
+    font-weight: 700;
+
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .step_heading {
+        font-size: 44px;
+        text-align: center;
+    } 
+    .step-res {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .step_heading {
+        font-size: 44px;
+        text-align: center;
+    } 
+    .step-res {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+}

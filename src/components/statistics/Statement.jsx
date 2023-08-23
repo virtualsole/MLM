@@ -50,9 +50,9 @@ const Statement = (props) => {
 
   return (
     <>
-      <div className="statement mt-5 mb-5">
+      <div className="statement mt-5">
         <Container>
-          <Row>
+          <Row className="mb-5">
             <Col>
               <div className="Statement_table">
                 <Table responsive className="text-center">

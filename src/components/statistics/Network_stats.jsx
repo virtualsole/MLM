@@ -33,7 +33,7 @@ const Network_stats = () => {
 <div className="container">
       <div className="row">
           <div className="col-lg-6 col-sm-12 mt-lg-5">
-              <h1 className='home_heading mt-lg-5'>
+              <h1 className='lanch_head mt-lg-5'>
               Secure the Virtual <span style={{background: "#1ab4c4"}}>Vesting
 </span>
               </h1>

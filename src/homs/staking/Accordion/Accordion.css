@@ -1,0 +1,21 @@
+.accordion-bg,
+.accordion-button {
+  background-color: #5cfff3 !important;
+  color: #fff !important;
+}
+.accordion-button{
+  color: #000 !important;
+  border: #5cfff3 1px solid !important;
+
+}
+/* 
+. {
+  height: 600px;
+  overflow-y: scroll;
+} */
+
+@media only screen and (max-width: 600px) {
+    .accordion-bg {
+      width: 100% !important;
+        }
+}

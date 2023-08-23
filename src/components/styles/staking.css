@@ -4,6 +4,7 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    
    
  
 }
@@ -75,6 +76,16 @@
     color: hsla(0,0%,100%,.8);
     font-size: .7rem;
     margin: 0 !important;
+}
+
+.circle {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 89px;
+}
+.circle img {
+  height: 93px;
+  /* transform: scale(1); */
 }
 
 @media screen and (max-width: 990px) {

@@ -7,6 +7,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* scroll-behavior: smooth; */
 }
 
 :root {
@@ -29,8 +30,9 @@ body {
 
 
 
+
 ::-webkit-scrollbar {
-    width: 0; /* Width of the scrollbar track */
+    width: 10px; /* Width of the scrollbar track */
     overflow: hidden;
   }
   
@@ -43,6 +45,18 @@ body {
     border-radius: 4px;
   }
 
+  
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 a  {
     color:var(--primary-color)!important;
     text-decoration: none !important;
@@ -54,4 +68,5 @@ a:hover {
 
 h1,h2,h3,h4,h5,h6,p,span {
     color: var(--primary-color);
+    
 }

@@ -1,16 +1,9 @@
+
 .stack__heading {
     font-size: 50px;
     font-weight: 700;
 }
 
-.bg-stak {
-    background-color: #12334f;
-    border-top-right-radius: 35px;
-    border-bottom-right-radius: 35px;
-    height: 600px;
-    overflow-y: scroll;
-
-}
 
 
 .page_heading {
@@ -28,10 +21,7 @@
 }
 
 
-.hight_next {
-    height: 600px;
-    overflow-y: scroll;
-}
+
 
 .tab-bg {
     display: none;
@@ -57,5 +47,41 @@
     .stack__heading  {
         font-size: 28px;
     }
+    .step-mob {
+        display: flex;
+        justify-content: center;
+    
+        align-items: center;
+        margin: 0 auto;
+    }
     
 }
+
+
+
+.animat {
+
+ 
+
+    position: relative;
+    left: -30px;
+    top: -6rem;
+    border-radius: 50%;
+    animation: zoom-in-zoom-out 5s ease-out infinite;
+   
+  }
+
+
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(0.8, 0.8);
+    }
+    50% {
+      transform: scale(1.1, 1.1);
+    }
+   
+    100% {
+      transform: scale(0.8, 0.8);
+    }
+  }
