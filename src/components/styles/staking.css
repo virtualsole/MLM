@@ -1,9 +1,7 @@
 /* Staking Component */
 .stack-bg {
-  background-image: url("../../assets/defi-banner.svg") !important;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+  border-bottom: 3px solid #000;
+  margin: 0 110px;
     
    
  
@@ -89,7 +87,9 @@
 }
 
 @media screen and (max-width: 990px) {
-    
+    .stack-bg {
+        border: none;
+    }
     .stake_table {
         background: var(--head-bg);
         width: 100%;
@@ -99,6 +99,7 @@
     .text_td {
         text-align: justify;
     }
+    
 
     .stakes_right_col {
         padding-bottom: 2rem;

@@ -5,6 +5,12 @@
     
 }
 
+
+.ResStep {
+    display: none;
+}
+
+
 @media only screen and (max-width: 600px) {
     .step_heading {
         font-size: 44px;
@@ -17,6 +23,13 @@
         text-align: center;
         margin: 0 auto;
     }
+    .desktop {
+        display: none;
+    }
+    .ResStep {
+        display: block;
+    }
+    
 }
 @media only screen and (max-width: 1200px) {
     .step_heading {
@@ -30,4 +43,11 @@
         text-align: center;
         margin: 0 auto;
     }
+    .desktop {
+        display: none;
+    }
+    .ResStep {
+        display: block;
+    }
+    
 }

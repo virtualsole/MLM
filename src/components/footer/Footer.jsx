@@ -13,7 +13,7 @@ const Footer = () => {
     <section className='footer-bg'>
         <div className="container-fluid pt-lg-0 pt-5">
             <div className="row">
-                <div className="col-lg-3 col-sm-6 mt-lg-5">
+                <div className="col mt-lg-5">
                     <h3 className='text-light ms-4'>Get Started</h3>
                     
                     <ul class="mb-0 mt-3">
@@ -25,7 +25,7 @@ const Footer = () => {
                         
                     </ul>
                 </div>
-                <div className="col-lg-3 col-sm-6 mt-lg-5">
+                <div className="col mt-lg-5">
                     <h3 className='text-light ms-4'>Ecosystem</h3>
                     
                     <ul class="mb-0 mt-3">
@@ -38,7 +38,7 @@ const Footer = () => {
                         
                     </ul>
                 </div>
-                <div className="col-lg-3 col-sm-6 mt-lg-5">
+                <div className="col mt-lg-5">
                     <h3 className='text-light ms-4'>Developers</h3>
                     
                     <ul class="mb-0 mt-3">
@@ -50,8 +50,8 @@ const Footer = () => {
                         
                     </ul>
                 </div>
-                <div className="col-lg-3 col-sm-6 mt-lg-5">
-                <h3 className='text-light ms-lg-0 ms-4'>Stay Up to Date</h3>
+                <div className="col mt-lg-5">
+                <h3 className='text-light mt-4 ms-lg-0 ms-4'>Stay Up to Date</h3>
                 <form className='mt-lg-3 ms-lg-0 ms-4'>
                 <SlEnvolope className='far-icon'/>
                 <input type="email" placeholder='Enter Your Email' required />

@@ -14,14 +14,17 @@
     color: var(--table-clr) !important;
 }
 
-@media screen and (max-width:575px) {
+@media only screen and (max-width:450px) {
+    .stakehistory Table th{
+        font-size: 5px !important;
+    }
+}
+@media only screen and (max-width:575px) {
     .stake_history {
         margin-inline: .5rem;
     }
 
         .stakehistory Table th{
-            line-height: 18px;
-            font-size: 13px;
-            padding-inline: .9rem !important;
+            font-size: 7.4px;
         }
 }

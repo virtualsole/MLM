@@ -4,8 +4,8 @@ const World = () => {
   return (
     <section>
         <div className="container">
-            <div className="row">
-            <h1 className='world_heading mt-lg-5'>
+            <div className="row responsive">
+            <h1 className='world_heading mt-lg-5 '>
             Change your <span className='span1'>world</span> <br></br>
  <span className='span2'>earning</span> rewards with<br></br> VRC
             </h1>

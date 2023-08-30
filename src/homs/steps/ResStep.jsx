@@ -1,19 +1,19 @@
 import React from 'react'
 import wallet from "../../assets/13-25-13-552_512.gif"
-import Bank from "../../assets/BankGifffff.gif"
+import Bank from "../../assets/Bankgif.gif"
 import Pig from "../../assets/pig.gif"
 import './step.css'
-const Step = () => {
+const ResStep = () => {
   return (
-    <section className='desktop'>
+    <section className='ResStep'>
       
         <div className="container">
         <h1 className='step_heading mt-5 mb-lg-5'>Start staking in 3 easy steps</h1> 
             <div className="row step-res">
-                <div className="col-lg-4 col-sm-12">
+                <div className="col">
                         <div className="d-flex gap-3 step-res">
-                        <img src={wallet} alt="" width={150} height={150} />
                     <h1 className='step_heading' style={{color: "#bef0ed", fontSize: "150px"}}>1</h1>
+                        <img src={wallet} alt="" width={150} height={150} />
                     
                         </div>
                         <h2 style={{
@@ -28,10 +28,10 @@ Choose a wallet</h2>
                 </button>
 
                 </div>
-                <div className="col-lg-4 col-sm-12">
+                <div className="col">
                     <div className="d-flex gap-3 step-res">
-                  <img src={Bank} alt="" width={150} height={150} />
                     <h1 className='step_heading' style={{color: "#fecfd0", fontSize: "150px"}}>2</h1>
+                  <img src={Bank} alt="" width={150} height={150} />
                     </div>
                     <h2 style={{
                             fontSize: "28px",
@@ -46,10 +46,10 @@ Get VRC</h2>
 Get VRC 
                 </button>
                 </div>
-                <div className="col-lg-4 col-sm-12">
+                <div className="col">
                     <div className="d-flex gap-3 step-res">
-                    <img src={Pig} alt="" width={150} height={150} />
                     <h1 className='step_heading' style={{color: "#e3f3be", fontSize: "150px"}}>3</h1>
+                    <img src={Pig} alt="" width={150} height={150} />
                     </div>
                     <h2 style={{
                             fontSize: "28px",
@@ -70,4 +70,4 @@ Explore Staking
   )
 }
 
-export default Step
+export default ResStep

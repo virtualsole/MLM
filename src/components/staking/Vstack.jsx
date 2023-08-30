@@ -69,7 +69,7 @@ const Vstack = () => {
      
       
             <div className="row justify-content-between ">
-              <div className="col-lg-4 ">
+              <div className="col-lg-4 col-md-6 col-sm-12 ">
               <a class="cart step-res mb-3" href="#" >
               <div className="p-2">
                   <p className=" text-value">{userInfo.totalDepositeInNetwork}</p>
@@ -83,7 +83,7 @@ const Vstack = () => {
   </a>
           
               </div>
-              <div className="col-lg-4 ">
+              <div className="col-lg-4 col-md-6 col-sm-12 ">
               <a class="cart step-res mb-3 mb-lg-3 mb-md-3 " href="#">
               <div className="p-2">
                   <p className=" text-value">{userInfo.totalDepositeInNetwork}</p>
@@ -97,7 +97,7 @@ const Vstack = () => {
   </a>
           
               </div>
-              <div className="col-lg-4 ">
+              <div className="col-lg-4 col-md-6 col-sm-12 ">
               <a class="cart step-res mb-3 mb-lg-3 mb-md-3 " href="#">
               <div className="p-2">
                   <p className=" text-value">{userInfo.totalDepositeInNetwork}</p>
@@ -111,13 +111,9 @@ const Vstack = () => {
   </a>
           
               </div>
-
-           
-   
-            </div>
-            <div className="row justify-content-between">
-              <div className="col-lg-4 ">
-              <a class="cart step-res mb-3 mb-lg-3 mb-md-3 " href="#">
+         
+              <div className="col-lg-4 col-md-6 col-sm-12 ">
+              <a class="cart step-res mb-3 mb-lg-3 mb-md-3" href="#">
               <div className="p-2">
                   <p className=" text-value">{userInfo.totalDepositeInNetwork}</p>
                   <h2 className=" text-center Vstack-title">Total Rewards</h2>
@@ -130,7 +126,7 @@ const Vstack = () => {
   </a>
           
               </div>
-              <div className="col-lg-4 card-pic ">
+              <div className="col-lg-4 col-md-6 col-sm-12 card-pic ">
               <a class="cart step-res mb-3 mb-lg-3 mb-md-3 " href="#">
               <div className="p-2">
                   <p className=" text-value">{userInfo.totalDepositeInNetwork}</p>
@@ -144,7 +140,7 @@ const Vstack = () => {
   </a>
           
               </div>
-              <div className="col-lg-4 card-pic ">
+              <div className="col-lg-4 col-md-6 col-sm-12 card-pic ">
               <a class="cart step-res mb-3 mb-lg-3 mb-md-3 " href="#">
               <div className="p-2">
                   <p className=" text-value">{userInfo.totalDepositeInNetwork}</p>
@@ -158,7 +154,11 @@ const Vstack = () => {
   </a>
           
               </div>
+         
+           
+   
             </div>
+           
      
          
     

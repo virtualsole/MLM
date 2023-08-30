@@ -7,6 +7,7 @@ import Platform from '../../homs/platform/Platform'
 import Staking from '../../homs/staking/Staking'
 import Footer from '../footer/Footer'
 import Step from '../../homs/steps/Step'
+import ResStep from '../../homs/steps/ResStep'
 const Homer = () => {
   useEffect(() => {
     window.scrollTo(0,0)
@@ -23,6 +24,7 @@ const Homer = () => {
      
 
       <Step />
+      <ResStep />
       <Staking />
       <Footer />
     </>

@@ -12,7 +12,7 @@ const Chat = () => {
       setIsOpen(!isOpen);
     };
   return (
-    <div>
+    <div> 
     
       <div className={`card ${isOpen ? 'open' : ''}`}>
       <div className="chat_icon" onClick={toggleCard} >

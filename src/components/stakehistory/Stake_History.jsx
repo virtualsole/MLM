@@ -37,7 +37,7 @@ const Stake_History = () => {
           <Row className="stakehistory">
             <Col>
               <h2 className="mb-4">Stake History</h2>
-              <Table responsive>
+              <Table>
                 <thead>
                   <tr>
                     <th>Tier</th>
